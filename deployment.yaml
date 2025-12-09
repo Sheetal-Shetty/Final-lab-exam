@@ -6,7 +6,7 @@ metadata:
     app: staticwebsite
 spec:
   replicas: 1
-  selectors:
+  selector:
     matchLabels:
       app: staticwebsite
   template:
