@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: staticwebsite
+  name: staticweb
   labels:
-    app: staticwebsite
+    app: staticweb
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: staticwebsite
+      app: staticweb
   template:
     metadata: 
       labels:
-        app: staticwebsite
+        app: staticweb
     spec:
       containers:
-        -name: staticwebsite
+        -name: staticweb
         image: sheetalsshetty/finallabexam:v1
         ports: 
           -containerPort: 80
