@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: staticwebsite
+  labels:
+    app: staticwebsite
+spec:
+  replicas: 1
+  selector:
+    matchLables:
+      app: staticwebsite
+  template:
+    metadata: 
+      name: staticwebsite
+      lables:
+        app: staticwebsite
+    spec:
+      container:
+        -name: staticwebsite
+         image: sheetalsshetty/finallabexam:v1
+         ContainerPorts:
+           Port: 80
+    
