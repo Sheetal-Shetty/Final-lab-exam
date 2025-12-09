@@ -6,7 +6,8 @@ metadata:
     app: staticwebsite
 spec:
   type: NodePort
-  selector: staticwebsite
+  selector: 
+    label: staticwebsite
   ports:
     port: 83
     targetPort: 80
