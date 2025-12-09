@@ -1,0 +1,13 @@
+apiVersion: app/v1
+kind: Service
+metadata: 
+  name: staticwebsite
+  labels:
+    app: staticwebsite
+spec:
+  type: NodePort
+  selector: staticwebsite
+  ports:
+    port: 83
+    targetPort: 80
+    
