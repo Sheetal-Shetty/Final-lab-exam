@@ -18,6 +18,6 @@ spec:
       container:
         -name: staticwebsite
          image: sheetalsshetty/finallabexam:v1
-         ContainerPorts:
-           Port: 80
+         containerPorts:
+           port: 80
     
