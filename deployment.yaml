@@ -18,6 +18,6 @@ spec:
         -name: staticwebsite
         label:
           app: staticwebsite
-        image= sheetalsshetty/finallabexam:v1
-        port= 80
+        image: sheetalsshetty/finallabexam:v1
+        port: 80
     
