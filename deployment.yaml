@@ -11,7 +11,7 @@ spec:
       app: staticwebsite
   template:
     metadata: 
-      lables:
+      labels:
         app: staticwebsite
     spec:
       container:
