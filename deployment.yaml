@@ -16,8 +16,6 @@ spec:
     spec:
       container:
         -name: staticwebsite
-        label:
-          app: staticwebsite
         image: sheetalsshetty/finallabexam:v1
         ports: 
           -containerPort: 80
