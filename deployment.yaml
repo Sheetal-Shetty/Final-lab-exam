@@ -10,13 +10,13 @@ spec:
     matchLabels:
       app: staticweb
   template:
-    metadata: 
+    metadata:
       labels:
         app: staticweb
     spec:
       containers:
       - name: staticweb
-        image: sheetalsshetty/finallabexam:v1
-        ports: 
-          -containerPort: 80
+        image: sheetalsshetty/finallabexam:latest
+        ports:
+        - containerPort: 80
     
